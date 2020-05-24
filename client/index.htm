@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/styles.css" rel="stylesheet">
+        <!-- <script data-main = "lib/main" src = "lib/require.js"></script> -->
+        <!-- <script src = "./lib/imageLib/imageLib.js"></script> -->
+        <script src='lib/main.js'></script>
+
+    </head>
+    <body>
+        <div class="wrapper container">
+            
+
+
+            <div class='msgArea'>
+                <div class='msgTxt'>
+                <textarea class='msgTxtArea'></textarea>
+                <div id="dropArea" class ='msgDrop' draggable="true"></div>
+            </div>
+                <div class="msgSend" onclick="">
+                    <p class="msgSendText">Отправить</p>
+
+                </div>
+                <div class="msgSecret">
+                    <input type='file' name='img' id='contFile' accept="image/jpeg,image/png,image/bmp" onchange="fff()">
+                    <canvas id='loadImg'></canvas>
+<script>
+    function fff (){
+let canvas = document.getElementById('loadImg');
+let image = document.getElementById('contFile');
+
+context = canvas.getContext('2d');
+
+canvas.width = image.width;
+canvas.height = image.height;
+
+function drawImage(image) {
+    context.drawImage(image, 0, 0);
+  }
+    }
+</script>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>

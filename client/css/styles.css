@@ -1,0 +1,55 @@
+.msgSend {
+    position: absolute;
+width: 94.99px;
+height: 31.81px;
+left: 766.02px;
+top: 594.54px;
+
+background: #56CCF2;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 0px 5px 5px 0px;
+}
+
+.msgTxt {
+position: absolute;
+width: 498.12px;
+height: 103px;
+left: 269px;
+top: 590px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 2px;
+}
+
+.msgSendTxt {
+position: absolute;
+width: 94.99px;
+height: 30.29px;
+left: 766.02px;
+top: 596.06px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 20px;
+/* or 203% */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration-line: underline;
+
+color: #000000;
+}
+
+.msgTxtArea {
+    
+    width: 80%; /* Ширина поля в процентах */
+    height: 100%; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+
+}
